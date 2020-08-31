@@ -57,3 +57,24 @@ p{
     line-height: 1;
     text-transform: uppercase;
 }
+
+
+.section-title{
+
+}
+
+.hero{
+    text-align:center;
+    padding:15em 0;
+    background: #222;
+    background-blend-mode: multiply;
+
+    @supports(background-blend-mode: multiply){
+        background-image: 
+            url(./img/shoe-3.png),
+            radial-gradient(#444,#111);
+        background-blend-mode: multiply;
+    }
+    
+    
+}
