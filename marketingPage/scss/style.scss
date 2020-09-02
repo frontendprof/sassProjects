@@ -1,6 +1,8 @@
 
 
 @import "config";
+@import "utilities";
+@import "buttons";
 
 
 // _style.scss
@@ -26,8 +28,7 @@ a{
 
 
 .showcase{
-    background-color: $primary-color;
-    color:#fff;
+    @include set-background($primary-color);
     height: 600px;
 
     nav{
@@ -43,7 +44,7 @@ a{
                 padding:15px;
 
                 a{
-                    color:#fff;
+                    color:set-text-color($primary-color);
                 }
 
                 a:hover{
